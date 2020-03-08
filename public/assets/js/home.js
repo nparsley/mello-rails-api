@@ -55,7 +55,15 @@ function handleSignupResponse(status) {
 }
 
 function handleLoginResponse(data, status, jqXHR) {
-  console.log(status, data, jqXHR);
+  if (status === 'success') {
+    let jwt = jqXHR.getResponseHeader('authorization');
+    let user = JSON.stringify(data);
+
+    localStorage.setItem('authorization', jwt);
+    localStorage.setItem('user', user);
+  } else {
+    displayMessage('Invalid email or password.', 'danger');
+  }
 }
 
 function authenticateUser(email, password) {
