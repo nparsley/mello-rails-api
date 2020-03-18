@@ -34,9 +34,13 @@ function getBoard(id) {
     renderBoard();
   })
   .catch(function(err) {
+<<<<<<< HEAD
     if (err.statusText === 'Unauthorized') {
       location.replace('/boards');
     }
+=======
+    location.replace('/boards');
+>>>>>>> d522f6d49f1785ea9d446085b147f7d23e07160c
   });
 }
 
@@ -117,6 +121,7 @@ function renderBoard() {
 
 function renderContributors() {
   let $contributorListItems = board.users.map(function(user) {
+<<<<<<< HEAD
     let $contributorListItem = $('<li>');
     let $contributorSpan = $('<span>').text(user.email);
     let $contributorDeleteButton = $('<button class="danger">Remove</button>')
@@ -125,6 +130,9 @@ function renderContributors() {
 
     $contributorListItem.append($contributorSpan, $contributorDeleteButton);
 
+=======
+    let $contributorListItem = $('<li>').text(user.email);
+>>>>>>> d522f6d49f1785ea9d446085b147f7d23e07160c
     return $contributorListItem;
   });
 
@@ -261,6 +269,10 @@ function handleCardCreate(event) {
 function openListEditModal(event) {
   let listData = $(event.target).data();
   
+<<<<<<< HEAD
+=======
+
+>>>>>>> d522f6d49f1785ea9d446085b147f7d23e07160c
   $editListInput.val(listData.title);
   $editListSaveButton.data(listData);
   $editListDeleteButton.data(listData);
@@ -402,6 +414,7 @@ function openContributorModal() {
   MicroModal.show('contribute');
 }
 
+<<<<<<< HEAD
 function handleContributorDelete() {
   let { id, email } = $(event.target).data();
 
@@ -418,6 +431,8 @@ function handleContributorDelete() {
   });
 }
 
+=======
+>>>>>>> d522f6d49f1785ea9d446085b147f7d23e07160c
 $contributorModalSaveButton.on('click', handleContributorSave);
 $contributorModalButton.on('click', openContributorModal);
 $saveCardButton.on('click', handleCardCreate);
