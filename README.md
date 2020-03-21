@@ -49,7 +49,7 @@
 <img src='/app/assets/images/mellodraganddrop1.PNG'>
 <img src='/app/assets/images/mellodraganddrop2.PNG'>
 
-* The intial user who created the board has the capability to add additional contributors to that board.  Only users who have created an account can be added as a contributor.  Any user that is added to the board can add any new contributors or remove any of the current contributors at any time.  Only boards that users created or are contributors towards will show up on the board page when signed in. 
+* The initial user who created the board has the capability to add additional contributors to that board.  Only users who have created an account can be added as a contributor.  Any user that is added to the board can add any new contributors or remove any of the current contributors at any time.  Only boards that users created or are contributors towards will show up on the board page when signed in. 
 
 <img src='/app/assets/images/mellocontributors.PNG'>
 <img src='/app/assets/images/mellocontributorinvalid.PNG'>
