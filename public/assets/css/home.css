@@ -136,3 +136,11 @@ button {
   -webkit-appearance: none;
   background-color: inherit;
 }
+
+html { 
+  background: url(melloplan.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
